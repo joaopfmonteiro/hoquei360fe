@@ -1,0 +1,29 @@
+body{
+  margin: 0px;
+}
+.container{
+  display: grid;
+  min-height: 100vh;
+  min-width: 100%;
+  padding: 0px;
+  margin: 0px;
+  grid-template-columns: 6rem 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "top-header top-header"
+    "lateral-header main-content";
+}
+
+app-top-header{
+  grid-area: top-header;
+}
+
+app-lateral-header{
+  grid-area: lateral-header;
+}
+
+app-main-content{
+  grid-area: main-content;
+  background-color: rgba(17,17,17)
+}
+

@@ -1,0 +1,27 @@
+<div>
+  <table class="table table-striped table-dark">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Nation</th>
+        <th scope="col">Division</th>
+        <th scope="col">Goals Scored</th>
+        <th scope="col">Goals Conceded</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let team of teams">
+        <th scope="row">{{team.name}}</th>
+        <td>{{team.nation}}</td>
+        <td>{{team.division}}</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-secondary active">
+      <input type="checkbox" checked autocomplete="off"> New Team
+    </label>
+  </div>
+</div>
